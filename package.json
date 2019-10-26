@@ -27,9 +27,13 @@
     "url": "https://github.com/peterthehan/create-discord-bot.git"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "discord.js": "github:discordjs/discord.js#master"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
