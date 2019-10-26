@@ -1,6 +1,6 @@
 module.exports = {
     name: 'd&d',
-    aliases: ['d', 'session'],
+    aliases: ['d', 'dnd', 'session'],
     ownersOnly: true,
     guildOnly: false,
     removeFalsyArgs: false,
