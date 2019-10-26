@@ -1,17 +1,17 @@
 module.exports = {
     name: 'event',
     aliases: ['e', 'newevent'],
-    ownersOnly: true,
+    ownersOnly: false,
     guildOnly: false,
     removeFalsyArgs: false,
     requireArgs: false,
     deleteCommand: true,
     run: async (message, args) => {
         if (args.length === 0) {
-            message.channel.send('\`\`\`Incorrect syntax, see !event help for more info.\`\`\`');
+            message.author.send('\`\`\`Incorrect syntax, see !event help for more info.\`\`\`');
         }
         else if (args[0].toLowerCase() === 'help') {
-            message.channel.send('\`\`\`Command Syntax: !event {name} {days}\n'
+            message.author.send('\`\`\`Command Syntax: !event {name} {days}\n'
                 + '{name} can be as long as you like, with or without spaces.\n'
                 + '{days} must include any of the following letters, with no spaces:\n'
                 + 'M T W R F S (representing days of the week).\n\`\`\`'
